@@ -9,3 +9,7 @@ entity Books {
     digitalCopy : Boolean
 }
 
+entity Library{
+    key ID : UUID;
+    totalBooks : Integer;
+}
