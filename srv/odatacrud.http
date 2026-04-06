@@ -1,0 +1,43 @@
+GET http://localhost:4004/odata/v4/library-srv/BooksSet
+
+###
+
+GET http://localhost:4004/odata/v4/library-srv/BooksSet(b5e4c1a9-7d2f-4e6b-a8f3-9c1d5e7a4b33)
+
+###
+
+
+POST http://localhost:4004/odata/v4/library-srv/BooksSet
+Content-Type: application/json
+
+{
+       "title": "The Scemantic Designer",
+      "author": "Rohit Sharma",
+      "price": 69.99,
+      "publishedDate": "2029-09-14T00:00:00Z",
+      "digitalCopy": false
+}
+
+###
+PUT http://localhost:4004/odata/v4/library-srv/BooksSet(c3be01ca-7399-4be2-86a0-dd2239369339)
+Content-Type: application/json
+
+{
+       "title": "The Scemantic Cricketer",
+      "author": "Virat Kohli",
+      "price": 269.99,
+      "publishedDate": "2029-09-14T00:00:00Z",
+      "digitalCopy": false
+}
+
+###
+DELETE http://localhost:4004/odata/v4/library-srv/BooksSet(d1f7b4c9-3a8e-4d6b-b2f1-5e9c7a3d6b55)
+Content-Type: application/json
+
+{
+       "title": "The Scemantic Designer",
+      "author": "Virat Kohli",
+      "price": 269.99,
+      "publishedDate": "2029-09-14T00:00:00Z",
+      "digitalCopy": false
+}
